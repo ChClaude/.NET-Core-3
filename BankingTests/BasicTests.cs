@@ -7,13 +7,13 @@ namespace BankingTests
     public class BasicTests
     {
         [Fact]
-        public void Test1()
+        public void TrueIsTrue()
         {
             Assert.True(true);
         }
 
         [Fact]
-        public void Test2()
+        public void CantTakeMoreThanYouHave()
         {
             var account = new BankAccount("Kelly", 10000);
 
@@ -26,7 +26,7 @@ namespace BankingTests
         }
 
         [Fact]
-        public void Test3()
+        public void InitialBalance()
         {
             // Test that the initial balances must be positive
             Assert.Throws<ArgumentOutOfRangeException>(
